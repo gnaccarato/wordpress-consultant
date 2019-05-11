@@ -1,0 +1,435 @@
+/* 
+Theme Name: Test
+Author: Giovanni Naccarato
+Version: 1.0
+*/
+
+* {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#header_navbar {
+    position: fixed;
+    width: 100vw;
+    background: rgb(0, 0, 0);    
+    z-index: 2;
+    opacity: 0.9;        
+}
+
+#header {
+    width: 20vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#navbar_drop {
+    display: none;
+}
+
+.header_logo {
+    float: center;
+    text-align: center;
+    margin-top: 8px;   
+}
+
+.header_logo img {
+    height: 40px;
+    width: 180px;
+}
+
+.header_social {
+    float: center;
+    margin-top: 10px;    
+    text-align: center;
+    font-size: 35px;
+    color: #f4f4f4;
+}
+
+.header_social i:hover {
+    cursor: pointer;
+    color: orange;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+#navbar ul {    
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: 0.1s;
+}
+
+#navbar li a:hover {
+    color: orange;
+    transition: 0.1s;
+}
+
+#navbar li a.active {
+    color: orange;
+}
+
+#jumbotron {    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;    
+}
+
+.jumbotron_content {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35%;
+    text-align: center;
+    color: #f4f4f4;
+    z-index: 1;
+}
+
+.jumbotron_content h3 {
+    margin: 25px auto;    
+    font-size: 2.5rem;
+    text-transform: uppercase;    
+    position: relative;
+    animation: jumbo_h3;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;    
+}
+
+@keyframes jumbo_h3 {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.jumbotron_content h5 {
+    margin: 25px auto;
+    font-size: 1.3rem;
+    animation: jumbo_h5;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jumbo_h5 {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.main {    
+    margin: 35px auto;
+}
+
+.main h3 {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.main_frustrations {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.frustrations {
+    margin: 25px 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.main h4 {
+    margin: 25px auto;
+    text-align: center;
+}
+
+.main_eos {
+    width: 50vw;
+    margin: 35px auto;
+    text-align: center;
+}
+
+/* .eos img {
+    height: 200px;
+    width: 300px;
+} */
+
+
+.eos_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.eos_content {
+    margin: 25px 10px;
+}
+
+.main_featured {        
+    width: 50vw;    
+    margin: 35px auto;    
+}
+
+.main_featured h5 {
+    margin-top: 25px;
+}
+
+.featured_content {
+    text-align: center;        
+    margin: 35px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.featured_content img {
+    text-align: center;
+    margin: 15px 55px;
+}
+
+.main_banner {
+    width: 100vw;
+    margin: 25px auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: orange;
+    color: #f4f4f4;
+}
+
+.eos_elements {
+    width: 50vw;
+    margin: 35px auto;            
+}
+
+.eos_elements h4 {
+    color: orange;
+    text-align: center;
+}
+
+.element_1 {
+    text-align: center;
+    margin: 35px auto;     
+}
+
+.element_2,
+.element_3,
+.element_4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 55px 15px;     
+}
+
+.element_2 p {
+    margin: auto 0;
+}
+
+.element_3 p {
+    margin: auto 0;
+}
+
+.element_4 p {
+    margin: auto 0;
+}
+
+.element_4 img {
+    margin: auto 0;
+    height: 300px;
+    width: 300px;
+}
+
+.eos_entrepeneur {
+    margin: 35px auto;
+    text-align: center;
+}
+
+.eos_entrepeneur_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.eos_column {
+    margin: 35px 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.checkup_banner {    
+    width: 100vw;
+    margin: 25px auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: orange;
+    color: #f4f4f4;
+}
+
+.checkup {
+    width: 40vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkup h2 {
+    margin: auto 0;
+}
+
+.contact {
+    width: 50vw;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.contact_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
+}
+
+.contact_info {
+    text-align: center;
+    margin: 35px 5px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contact_info i {
+    margin: 15px 0;
+    font-size: 2rem;
+    color: orange;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background: #111;
+    color: #f4f4f4;
+    line-height: 2;
+}
+
+.main_leadership {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_leadership p {
+    margin: 15px auto;
+}
+
+.main_leadership h1,
+.main_leadership h2 {
+    color: orange;
+    margin: 15px auto;
+}
+
+.leadership_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.leadership_content {
+    margin: 25px 15px;
+}
+
+.system_modules {
+    width: 50vw;
+    margin: 0 auto;    
+}
+
+.module_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.module {
+    display: flex;
+    margin: 25px 15px;
+}
+
+.module_num {
+    margin: auto 0;
+    background: orange;
+    border-radius: 10px;
+    color: #f4f4f4;    
+    padding: 20px;
+    
+}
+
+.module_desc {
+    margin: auto 15px;    
+    
+}
+
+.team_parallax {
+    width: 100vw;
+    height: 60vh;    
+    margin: 35px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+        url('img/team.jpg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-attachment: fixed;
+}
+
+.parallax_content {
+    width: 50vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.team_par {
+    margin: 15px;
+    color: #f4f4f4;    
+    margin-top: 100px;
+    font-size: 1.3rem;
+}
+
+.past_events {
+    width: 50vw;
+    margin: 0 auto;    
+}
+
+.events_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event_videos {
+    margin: 35px 15px;
+    text-align: center;
+}
+
+.event_videos h5{
+    margin: 15px auto;
+    font-size: 1.3rem;
+    color: orange;    
+}
