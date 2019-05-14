@@ -1,32 +1,5 @@
-<?php
-
-get_header(); 
-
-while(have_posts()) {
-    the_post(); ?>
-
-<div id="header_navbar">
-        <header id="header">                
-            <div class="header_logo">                        
-                <a href="index.php">                        
-                    <img src="img/logo.jpg" alt="Name and Logo"/>
-                </a>
-            </div>
-            <div class="header_social">                    
-                <i class="fab fa-facebook"></i>                
-                <i class="fab fa-instagram"></i>
-            </div>
-        </header>
-        <div id="navbar_drop">&#9776</div>
-        <nav id="navbar">                
-            <ul>
-                <li><a href="index.php">What is EOS?</a></li>
-                <li><a href="infinity.php" class="active">What is Infinity Leadership?</a></li>
-                <li><a href="#">About</a></li>                                
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<?php get_header(); ?>
+    
     <div class="main">
         <div class="main_leadership">
             <h1>What is the (X)-ceptional Leadership System?</h1>
@@ -90,7 +63,8 @@ while(have_posts()) {
                 </div>                
             </div>
         </div>
-        <div class="team_parallax">
+        <div class="team_parallax" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+        url('<?php echo get_theme_file_uri('/images/team.jpg'); ?>');">
             <div class="parallax_content">
                 <div class="team_par">
                     <h3>Business Priorities Addressed</h3>
@@ -133,8 +107,4 @@ while(have_posts()) {
         </div>
     </div>
 
-<?php }
-
-get_footer();
-
-?>
+<?php get_footer(); ?>

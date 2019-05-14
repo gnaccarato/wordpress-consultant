@@ -390,9 +390,7 @@ Version: 1.0
 .team_parallax {
     width: 100vw;
     height: 60vh;    
-    margin: 35px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
-        url('img/team.jpg.jpg');
+    margin: 35px auto;    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;   

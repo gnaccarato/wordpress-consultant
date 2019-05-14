@@ -1,26 +1,5 @@
-<?php include('header.php'); ?>
-<div id="header_navbar">
-        <header id="header">                
-            <div class="header_logo">                        
-                <a href="index.php">                        
-                    <img src="<?php echo get_theme_file_uri('/images/logo.jpg'); ?>" alt="Name and Logo"/>
-                </a>
-            </div>
-            <div class="header_social">                    
-                <i class="fab fa-facebook"></i>                
-                <i class="fab fa-instagram"></i>
-            </div>
-        </header>
-        <div id="navbar_drop">&#9776</div>
-        <nav id="navbar">                
-            <ul>
-                <li><a href="index.php" class="active">What is EOS?</a></li>
-                <li><a href="infinity.php">What is Infinity Leadership?</a></li>
-                <li><a href="#">About</a></li>                                
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<?php get_header(); ?>
+    
     <div id="jumbotron"
     style='background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
         url("<?php echo get_theme_file_uri('/images/rise.jpg'); ?>");'>
@@ -174,4 +153,4 @@
         </div>        
     </div>
 
-    <?php include('footer.php'); ?>
+    <?php get_footer(); ?>
